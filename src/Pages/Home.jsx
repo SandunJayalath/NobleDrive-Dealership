@@ -25,13 +25,13 @@ import { Keyboard } from 'lucide-react';
 import { FaPaperPlane } from "react-icons/fa";
 import { Hourglass } from 'lucide-react';
 import { X } from 'lucide-react';
-import bmw from '../assets/bmwLogo.png'
-import lambo from '../assets/lambo.png'
-import benz from '../assets/benzLogo.png'
-import profile from '../assets/profile.png'
-import comparing from '../assets/carComparisons.png'
-import loanImage from '../assets/car-loan.png'
-import newsletter from '../assets/newsletterImage.png'
+import bmw from '../assets/bmwLogo.PNG'
+import lambo from '../assets/lambo.PNG'
+import benz from '../assets/benzLogo.PNG'
+import profile from '../assets/profile.PNG'
+import comparing from '../assets/carComparisons.PNG'
+import loanImage from '../assets/car-loan.PNG'
+import newsletter from '../assets/newsletterImage.PNG'
 
 // For the image slider section
 import Carousel from 'react-multi-carousel';
@@ -120,12 +120,12 @@ function Home() {
 
                 <CarBrandsGroup
                 path=""
-                carImage={bmw}
+                carImage={`${import.meta.env.BASE_URL}assets/bmwLogo.png`}
                 carName="BMW"/>
                 
                 <CarBrandsGroup
                 path=""
-                carImage={lambo}
+                carImage="/NobleDrive-Dealership/assets/lambo.png"
                 carName="LAMBORGHINI"/>
 
                 <CarBrandsGroup
