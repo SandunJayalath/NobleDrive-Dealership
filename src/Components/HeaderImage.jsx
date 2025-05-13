@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 function HeaderImage({ backgroundImage, heading, paragraph, buttonText, path }) {
 
@@ -14,9 +15,9 @@ function HeaderImage({ backgroundImage, heading, paragraph, buttonText, path }) 
           <div id="header-content" className="container" style={{color: "white", position: "absolute", top: "50%", transform: "translateY(-50%)"}}>
             <h1 className="fw-bold" style={{fontFamily: "Poppins"}}><strong>{heading}</strong></h1>
             <h5>{paragraph}</h5>
-            <a href={path}>
+            <Link to={path}>
               <button><strong>{buttonText}</strong></button>
-            </a>
+            </Link>
           </div>
         </div>
         </>

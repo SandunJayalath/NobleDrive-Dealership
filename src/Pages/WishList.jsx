@@ -108,7 +108,7 @@ function WishList(){
             heading="Save The Best for Later!"
             paragraph="At SD Dealership, we help you find the perfect car with great prices and a hassle-free experience."
             buttonText="Explore Our Inventory"
-            path="./CarsForSale"/>
+            path="/CarsForSale"/>
 
         <div className="container-fluid" style={{textAlign: "center", paddingTop: "5px", marginTop: "20px",paddingBottom: "20px", backgroundColor: "rgba(188, 247, 255, 0.56)"}}>
             <HeaderTopic text="Check Out The Wish List"/>

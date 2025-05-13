@@ -241,9 +241,9 @@ function AboutUs() {
                         <textarea id="smart-filtering-text-areas" className="reviews-sending-text-area" style={{backgroundColor: "rgb(46, 46, 46)", width: "99%", minHeight: "100px", color: "white", textAlign: "left", padding: "10px", borderRadius: "10px"}} type="text" placeholder="Give us a review about our service" value={review} onChange={(e) => setReview(e.target.value)}/>
                         <button id="submit-button" className="d-flex justify-content-center"><strong><Send size="20px" style={{marginRight: "10px"}}/>Send</strong></button>
                     
-                </div>
+                    </div>
                 </form>
-                </div>
+            </div>
             </div>
 
             <div className="container-fluid" style={{textAlign: "center", display: "flex", justifyContent: "center", alignItems: "center"}}>

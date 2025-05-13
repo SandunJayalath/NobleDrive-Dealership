@@ -27,11 +27,11 @@ import { Hourglass } from 'lucide-react';
 import { X } from 'lucide-react';
 import bmw from '../assets/bmwLogo.png'
 import lambo from '../assets/lambo.png'
-import benz from '../assets/benzlogo.png'
+import benz from '../assets/benzLogo.png'
 import profile from '../assets/profile.png'
-import comparing from '../assets/Car Comparisons.png'
+import comparing from '../assets/carComparisons.png'
 import loanImage from '../assets/car-loan.png'
-import newsletter from '../assets/Newsletter Image.png'
+import newsletter from '../assets/newsletterImage.png'
 
 // For the image slider section
 import Carousel from 'react-multi-carousel';

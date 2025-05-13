@@ -6,7 +6,6 @@ function DesWithImg(props){
 
     return(
     <>
-    
     <div className="container" id="des-with-img">
         <img src={props.pathToimg} alt="An Image"/>
         <Topics text={props.topic}/>

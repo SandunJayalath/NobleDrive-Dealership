@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import SpecialButton from './SpecialButton';
 import { FaHeart } from "react-icons/fa";
+import { Link } from 'react-router-dom'
 
 function SubCarCard(props){
 
     return(
     <>
-  <a href="./CarsForSale" style={{textDecoration: "none"}}>
+  <Link to="/CarsForSale" style={{textDecoration: "none"}}>
     <div className="container mt-4" id ="sub-car-selling-component">
       <div className="card border-0">
         <div className="row g-0 d-flex flex-column flex-md-row align-items-center">
@@ -36,7 +37,7 @@ function SubCarCard(props){
         </div>
       </div>
     </div>
-  </a>
+  </Link>
     </>
     );}
 

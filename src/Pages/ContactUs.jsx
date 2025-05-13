@@ -150,7 +150,7 @@ function ContactUs() {
                 <div className="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center align-items-center" style={{flexDirection: "column"}}>
                     <h1 style={{marginBottom: "10px"}}><strong>Still Have Questions?</strong></h1>
                     <p style={{fontFamily: "Inter"}}>Our experts are here to help. Whether you're exploring financing options, looking for the perfect vehicle, or just need quick answers — we've got you covered.</p>
-                    <Link to="./LiveChatPage">
+                    <Link to="/LiveChatPage">
                         <button id="special-button"  style={{margin: "0px", width: "100%"}}>Chat Live</button>
                     </Link>
                 </div>
