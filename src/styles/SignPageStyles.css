@@ -1,0 +1,170 @@
+/* Sign In page Styles */
+
+div#sign-in-page {
+    background: linear-gradient(to bottom right, #0f1115, #1c1f26);
+    background-blend-mode: multiply;
+    overflow: hidden;
+  }
+  
+  #sign-in-container {
+    background-color: #1a1d23;
+    width: 400px; /* Keeping it as per inline style in React */
+    padding: 55px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.158);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    border: 3px solid gray;
+    transition: 0.3s;
+  }
+  #sign-in-container:hover {
+    border-color: rgb(132, 0, 255);
+  }
+
+  @media (max-width: 700px) {
+    #sign-in-container {
+      width: 380px;
+      
+    }
+  }
+  
+  #title {
+    font-size: 50px;
+    font-family: Inter, sans-serif;
+    text-align: center;
+    font-weight: 800;
+  }
+  
+  #title::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 33px;
+    left: 0px;
+    bottom: 3px;
+    border-radius: 5px;
+  }
+  
+  #input-box {
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  #input-box input {
+    width: 250px;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: white;
+  }
+  
+  #underline::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+  }
+  
+  #underline::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+  }
+  
+  #input-box input:focus ~ #underline::after,
+  #input-box input:valid ~ #underline::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  #input-box input[type="submit"] {
+    margin-top: 20px;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+    font-size: 17px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  p#subtle-message {
+    color: rgb(194, 194, 194);
+    border: 1px solid rgb(58, 58, 58);
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 100px;
+    z-index: 20;
+    font-weight: 500;
+  }
+  
+  #input-box input[type="submit"]:hover {
+    letter-spacing: 1px;
+    background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+  }
+
+h6#box-paragraph {
+    font-size: 13px;
+    margin: 30px 0px;
+    color: rgb(151, 151, 151);
+}
+h6#forgot-password-link {
+    color: rgb(207, 207, 207);
+    transition :0.3s;
+}
+
+h6#forgot-password-link:hover {
+    color: rgb(0, 68, 255);
+}
+
+button#back-button {
+    padding: 10px;
+    width: 200px;
+    background-color: blue;
+    margin: 20px;
+}
+
+input#flexCheckDefault {
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    border: 2px solid blue;
+}
+
+input#signing-button {
+  width: 100%;
+  background-color: #f5087f;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+input#signing-button:hover {
+  background-color: #a70b59;
+}
+  
