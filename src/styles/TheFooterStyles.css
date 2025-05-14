@@ -38,9 +38,8 @@ div#the-footer{
     border-bottom: 2px solid rgba(128, 0, 128, 0);
   }
   a#footer-links:hover {
-    color: rgba(150, 184, 247, 0.877);
-    display: inline-block;
-    border-bottom: 2px solid rgb(121, 121, 121);
+    color: rgba(196, 253, 250, 0.877);
+    text-decoration: underline;
   }
 
   .footer-social-media-icons {
