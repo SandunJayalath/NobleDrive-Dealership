@@ -35,6 +35,7 @@ function SubCarCard(props){
                 <button id="saving-button" style={{justifySelf: "end"}}><FaHeart className="heart-icon"/></button>
             </div>   */}
               <h5>{props.carName}</h5>
+              <h6>{props.description}</h6>
               <h3>{props.price}</h3>
               <div className="row d-flex mb-3 px-2" style={{justifyContent: "space-between"}}> 
                 <div className="col-3 tag">
@@ -47,7 +48,6 @@ function SubCarCard(props){
                   <Armchair/>{props.seats}Seats
                 </div>
               </div>
-              <h6>{props.description}</h6>
               <Link to="/CarsForSale" style={{textDecoration: "none"}}>
                 <button>View</button>
               </Link>

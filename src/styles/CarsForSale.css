@@ -6,7 +6,6 @@
     }
 }
 
-
 /* Car Selling Cards stylings */
 
   div#car-selling-component {
@@ -15,19 +14,66 @@
     border-radius: 15px;
     box-shadow: 5px 5px 15px none;
     transition: 0.3s;
-    padding: 10px;
-    max-width: 1000px;
+    padding: 9px;
+    max-width: 1100px;
     cursor: pointer;
     animation: fadeIn 0.3s forwards;
     transition: all 0.3s;
   }
 
-  @media (max-width: 600px) {
-    div#car-selling-component {
-      width: 100%;
+  div#car-selling-component .card-body{
+    padding-left: 25px;
+  }
+
+  div#car-selling-component h3{
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    -webkit-text-fill-color: #fa1244;
+    font-weight: 900;
+    font-family: Arial, sans-serif;
+    top: 10px;
+    font-size: 30px;
+  }
+
+  .car-card-header-image {
+    border-radius: 10px 0px 0px 10px;
+    height: 250px;
+  }
+
+   button#saving-button {
+    border: 3px solid rgb(65, 65, 65);
+    border-radius: 50%;
+    transition: 0.3s;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0px;
+    bottom: 10px;
+  }
+  button#saving-button:hover {
+    background-color: rgb(255, 255, 255);
+    border-color:rgb(0, 0, 0);
+  }
+
+  @media (max-width: 760px) {
+    .car-card-header-image {
+      border-radius: 10px 10px 0px 0px;
+      height: 250px;
+    }
+    div#car-selling-component .card-body{
+      padding-left: 3px;
+    }
+    div#car-selling-component h3{
+      top: 299px;
+      font-size: 27px;
+    }
+    button#saving-button {
+      top: 7px;
+      right: 7px;
     }
   }
-  
+
   @keyframes fadeIn {
     0% {
       transform: translateY(-20px);
@@ -69,20 +115,6 @@
     -webkit-text-stroke-color: rgb(7, 7, 7);
   }
   
-  button#saving-button {
-    border: 3px solid rgb(65, 65, 65);
-    border-radius: 50%;
-    transition: 0.3s;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    right: 0px;
-    bottom: 10px;
-  }
-  button#saving-button:hover {
-    background-color: rgb(255, 255, 255);
-    border-color:rgb(0, 0, 0);
-  }
   .heart-icon {
     color: rgb(255, 20, 20);
     transition : 0.3s;
@@ -139,6 +171,9 @@
   @media (max-width: 700px) {
     div#sub-car-selling-component {
       width: 330px;
+    }
+    div#sub-car-selling-component h5{
+      font-size: 25px;
     }
   }
 
@@ -277,12 +312,14 @@
   }
   
   div#car-sell-card-container {
-    padding-top: 70px;
+    padding-top: 100px;
+    
   }
   
   @media (max-width: 990px) {
     .searching-container {
       width: 95%;
+      top: 0px;
     }
     div#car-sell-card-container {
       padding-top: 100px;

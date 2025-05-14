@@ -210,10 +210,10 @@ function Home() {
                 </div>
                 </div>
                 
-                <div id="dropdown-type-container" className="justify-content-center" style={{marginTop: "20px", padding: "30px", backgroundColor: "rgba(184, 221, 243, 0.49)", gap: "10px", flexDirection: "row"}}>
-                <div className="row d-flex justify-content-center" onClick={() => setIsWarningBox(true)}>
+                <div id="dropdown-type-container" className="justify-content-center" style={{marginTop: "20px", padding: "30px 0px", backgroundColor: "rgba(184, 221, 243, 0.49)"}}>
+                <div className="row d-flex" onClick={() => setIsWarningBox(true)} style={{justifyContent: "space-"}}>
 
-                    <div className="col-6 col-md-3 col-lg-3 col-xl-3 d-flex justify-content-start">
+                    <div className="col-4 col-md-3 col-lg-3 col-xl-3 d-flex "  style={{justifyContent: "space-around"}}>
                     <div className="dropdown" id="dropdown-button">
                         <button className=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <strong>{fuelTypes}</strong>
@@ -226,7 +226,7 @@ function Home() {
                     </div>
                     </div>
 
-                    <div className="col-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center">
+                    <div className="col-7 col-md-4 col-lg-4 col-xl-4 d-flex"  style={{justifyContent: "space-around"}}>
                     <div className="dropdown" id="dropdown-button">
                         <button className=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{width :"200px"}}>
                             <strong>{transTypes}</strong>
@@ -239,7 +239,7 @@ function Home() {
                     </div>
                     </div>
 
-                    <div className="col-6 col-md-3 col-lg-3 col-xl-3 d-flex justify-content-start mt-3 mt-md-0 mt-lg-0 mt-xl-0">
+                    <div className="col-6 col-md-3 col-lg-3 col-xl-3 d-flex mt-3 mt-md-0 mt-lg-0 mt-xl-0"  style={{justifyContent: "space-around"}}>
                     <div className="dropdown" id="dropdown-button">
                         <button className=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <strong>{priceRange}</strong>
@@ -252,7 +252,7 @@ function Home() {
                     </div>
                     </div>
 
-                    <div className="col-6 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center mt-3 mt-md-0 mt-lg-0 mt-xl-0">
+                    <div className="col-6 col-md-2 col-lg-2 col-xl-2 d-flex  mt-3 mt-md-0 mt-lg-0 mt-xl-0" style={{justifyContent: "space-around"}}>
                     <div className="dropdown" id="dropdown-button">
                         <button className=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <strong>{year}</strong>
@@ -283,42 +283,42 @@ function Home() {
                                 carName="2018 05 Series"
                                 price="$60,150"
                                 seats="04 "
-                                description="White Color BMW Well Used Super features Car"/>
+                                description="Luxury meets performance in the refined and tech-packed BMW 5 Series."/>
 
                             <SubCarCard carImage="https://media.drive.com.au/obj/tx_q:70,rs:auto:960:540:1/driveau/upload/vehicles/used/mercedes-benz/c-class/2021/356ad781-7dab-50bd-be13-840895550000"
                                 carName="BENZ W205"
                                 price="$48,000"
                                 seats="04 "
-                                description="White Color BMW Well Used Super features Car"/>
+                                description="Sleek design and powerful performance define the sophisticated Benz W205."/>
 
                             <SubCarCard carImage="https://bringatrailer.com/wp-content/uploads/2023/05/2023_porsche_911-gt3-rs_gt3-rs-5-45639.jpg?fit=940%2C627"
                                 carName="Porsche GT3 RS"
                                 price="$241,300"
                                 seats="02"
-                                description="White Color BMW Well Used Super features Car"/>
+                                description="Track-ready precision and unmatched speed in the Porsche GT3 RS."/>
 
                             <SubCarCard carImage="https://www.mclarencf.com/imagetag/104/main/l/Used-2020-Ford-Mustang-Shelby-GT500.jpg"
                                 carName="Mustang GT500"
                                 price="$78,000"
-                                seats="04 "
-                                description="White Color BMW Well Used Super features Car"/>
+                                seats="02 "
+                                description="Raw power and classic muscle, the Mustang GT500 dominates the road."/>
                             <SubCarCard carImage="https://th.bing.com/th/id/OIP.leJwpzGbZmZQ3N5fb-MrxAHaE6?rs=1&pid=ImgDetMain"
                                 carName="Chevy Camaro"
                                 price="$45,000"
                                 seats="02 "
-                                description="White Color BMW Well Used Super features Car"/>
+                                description="Bold style and muscle car performance, the Chevy Camaro stands out."/>
                             
                             <SubCarCard carImage="https://th.bing.com/th/id/OIP.FjJwyHtjHdNdc-HJ-MuaSwHaFf?rs=1&pid=ImgDetMain"
                                 carName="Lambo Huracan"
                                 price="$331,000"
                                 seats="02 "
-                                description="White Color BMW Well Used Super features Car"/>
+                                description="Speed, design, and pure driving thrill, the Lamborghini Huracan excites."/>
 
                             <SubCarCard carImage="https://th.bing.com/th/id/OIP.s9DLcizteOFUmWj1lnJeoQHaFj?rs=1&pid=ImgDetMain"
                                 carName="Ferrari FF"
                                 price="$157,000"
                                 seats="02 "
-                                description="White Color BMW Well Used Super features Car"/>
+                                description="Luxury and power combine with four-seat versatility in the Ferrari FF."/>
                         </Carousel>;
                     </div>
                 </div>

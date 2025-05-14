@@ -118,7 +118,7 @@ function WishList(){
         {/* The Side Bar in The Larger Screen */}
         <div className="row d-flex justify-content-center">
         {isLargeScreen && favorites.length != 0 ? (
-            <div onClick={() => setIsWarningBox(true)}  className="col-lg-4 d-none d-lg-flex overflow-auto d-flex  mt-3" style={{width: "490px", height: "100vh"}}>
+            <div onClick={() => setIsWarningBox(true)}  className="col-lg-3 d-none d-lg-flex overflow-auto d-flex  mt-3" style={{width: "450px", height: "100vh"}}>
                 <div className="p-3" style={{width: "400px", backgroundColor: "rgb(233, 233, 233)", width: "435px", height: "115vh"}}>
                     <div className="text-center pt-3">
                         <h4><strong>🔹 Your WishList Toolbox</strong> </h4>
@@ -309,7 +309,7 @@ function WishList(){
         
         {/* Main Content */}
         
-        <div className="col-lg-8 col-xl-8 d-flex mt-2 col-11 wish-list-main-container">
+        <div className=" d-flex col-lg-8 px-4" style={{flexDirection: "column"}}>
          {favorites.length > 0 ? (
         favorites.map((car) => (
            <CarSellCard
@@ -371,7 +371,7 @@ function WishList(){
                             <SubCarCard carImage="https://www.mclarencf.com/imagetag/104/main/l/Used-2020-Ford-Mustang-Shelby-GT500.jpg"
                                 carName="Mustang GT500"
                                 price="$78,000"
-                                seats="04 "
+                                seats="02 "
                                 description="White Color BMW Well Used Super features Car"/>
                             <SubCarCard carImage="https://th.bing.com/th/id/OIP.leJwpzGbZmZQ3N5fb-MrxAHaE6?rs=1&pid=ImgDetMain"
                                 carName="Chevy Camaro"

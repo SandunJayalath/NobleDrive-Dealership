@@ -81,7 +81,7 @@ function TheFooter() {
                         </div>
                         <div className="d-flex gap-0" style={{width: "200px"}}>
                             <h6 style={{margin: "0px", width: "90px"}}>E-Mail:</h6>
-                            <p style={{margin: "0px"}}>info@autox.com</p>
+                            <p style={{margin: "0px"}}>info@noble.com</p>
                         </div>
                     </ul>
                 </div>
@@ -90,27 +90,27 @@ function TheFooter() {
                 <div className="col-12 d-flex justify-content-center align-items-center mt-3 mb-3" style={{flexDirection: "column"}}>
                     <h4>Social Media Links</h4>
                         <div className="d-flex justify-content-center mt-3 gap-4 gap-md-5 gap-lg-5 gap-xl-5" style={{alignItems: "center"}}>
-                            <a href="" className="footer-social-media-icons">
+                            <a href="#" className="footer-social-media-icons">
                                 <Instagram size="30px"/>                            
                             </a>
                             <div style={{width: "3px", height: "50px", backgroundColor: "rgb(161, 159, 159)"}}></div>
                             
-                            <a href="" className="footer-social-media-icons">
+                            <a href="#" className="footer-social-media-icons">
                                 <Twitter size="30px"/>
                             </a>
                             <div style={{width: "3px", height: "50px", backgroundColor: "rgb(161, 159, 159)"}}></div>
                             
-                            <a href="" className="footer-social-media-icons">
+                            <a href="#" className="footer-social-media-icons">
                                 <Linkedin  size="30px"/>
                             </a>
                             <div style={{width: "3px", height: "50px", backgroundColor: "rgb(161, 159, 159)"}}></div>
                             
-                            <a href="" className="footer-social-media-icons">
+                            <a href="#" className="footer-social-media-icons">
                                 <Facebook  size="30px"/>
                             </a>
                             <div style={{width: "3px", height: "50px", backgroundColor: "rgb(161, 159, 159)"}}></div>
                             
-                            <a href="" className="footer-social-media-icons">
+                            <a href="#" className="footer-social-media-icons">
                                 <FaWhatsapp  size="30px"/>
                             </a>
                         </div>

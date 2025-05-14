@@ -59,22 +59,22 @@ const CarsForSale = () => {
   // Cars Array and The Search Bar
 
   const cars = [
-    {id: 1, path: "/SingleProduct", url: "https://th.bing.com/th/id/OIP.0m2hnpY-ax7svRf6Ct3pCgHaFj?rs=1&pid=ImgDetMain", price: "$30,000", name: "BMW M3", year: "2018", description: "White Color BMW Well Used Super features Car",
-     fuelType: "Petrol", transmission: "Manual", mileage: "35,000 km", color: "White", condition: "Used",
+    {id: 1, path: "/SingleProduct", url: "https://cdn.rnudah.com/images/plain/07af77f0550035ec792b3c91253d77c0-2911479614976981582.jpg", price: "$30,000", name: "2018 05 Series", year: "2018", description: "Luxury meets performance. The 2018 BMW 5 Series offers premium comfort, cutting-edge features, and sporty elegance in every mile.",
+     fuelType: "Petrol", transmission: "Auto", mileage: "35,000 km", color: "White", condition: "Used",
     },
-    {id: 2, path: "/SingleProduct", url: "https://th.bing.com/th/id/OIP.leJwpzGbZmZQ3N5fb-MrxAHaE6?rs=1&pid=ImgDetMain", price: "$300,000", name: "CAMARO", year: "2008", description: "Yellow Color Camaro Well Used Super features Car",
+    {id: 2, path: "/SingleProduct", url: "https://th.bing.com/th/id/OIP.leJwpzGbZmZQ3N5fb-MrxAHaE6?rs=1&pid=ImgDetMain", price: "$45,000", name: "Chevrolet Camaro", year: "2008", description: "As seen in Transformers, the Camaro delivers muscle, style, and Hollywood flair in one unforgettable ride.",
       fuelType: "Petrol", transmission: "Manual", mileage: "35,000 km", color: "White", condition: "New",
      },
-     {id: 3, path: "/SingleProduct", url: "https://th.bing.com/th/id/OIP.FjJwyHtjHdNdc-HJ-MuaSwHaFf?rs=1&pid=ImgDetMain", price: "$230,000", name: "Lamborghini", year: "2020", description: "Great Color Lamborghini Well Used Super features Car",
+     {id: 3, path: "/SingleProduct", url: "https://th.bing.com/th/id/OIP.FjJwyHtjHdNdc-HJ-MuaSwHaFf?rs=1&pid=ImgDetMain", price: "$331,000", name: "Lamborghini Huracan", year: "2020", description: "Sleek, aggressive, and lightning fast — the Huracán blends Italian design with raw performance for an unforgettable supercar experience.",
       fuelType: "Petrol", transmission: "Manual", mileage: "35,000 km", color: "White", condition: "Used",
      },
-     {id: 4, path: "/SingleProduct", url: "https://images.pexels.com/photos/100653/pexels-photo-100653.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260", price: "$30,000", name: "BMW W3", year: "2018", description: "White Color BMW Well Used Super features Car",
+     {id: 4, path: "/SingleProduct", url: "https://images.pexels.com/photos/100653/pexels-photo-100653.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260", price: "$64,000", name: "Bmw 03 Series", year: "2018", description: "A perfect blend of performance, luxury, and everyday comfort. The 3 Series delivers dynamic driving with premium style.",
       fuelType: "Petrol", transmission: "Manual", mileage: "35,000 km", color: "White", condition: "New",
      },
-     {id: 5, path: "/SingleProduct", url: "https://th.bing.com/th/id/OIP.4w3BCeTHYtmZZ-YAOtozVQHaFj?rs=1&pid=ImgDetMain", price: "$310,000", name: "FERRARI", year: "2008", description: "Light Color Ferrari Well Used Super features Car",
+     {id: 5, path: "/SingleProduct", url: "https://th.bing.com/th/id/OIP.4w3BCeTHYtmZZ-YAOtozVQHaFj?rs=1&pid=ImgDetMain", price: "$331,000", name: "Ferrari 488 Pista", year: "2008", description: "Born for the racetrack, the 488 Pista blends extreme performance with Ferrari’s signature style and precision engineering.",
       fuelType: "Petrol", transmission: "Manual", mileage: "35,000 km", color: "White", condition: "Used",
      },
-     {id: 6, path: "/SingleProduct", url: "https://th.bing.com/th/id/OIP.YHxcrdneT3Lw3SthJ5NdbQHaFj?rs=1&pid=ImgDetMain", price: "$310,000", name: "PORSCHE gt3RS", year: "2019", description: "White Color BMW Well Used Super features Car",
+     {id: 6, path: "/SingleProduct", url: "https://th.bing.com/th/id/OIP.YHxcrdneT3Lw3SthJ5NdbQHaFj?rs=1&pid=ImgDetMain", price: "$250,000", name: "Porsche GT3RS", year: "2019", description: "Built for pure performance, the GT3 RS combines razor-sharp handling, a screaming naturally aspirated engine, and iconic Porsche engineering in a race-ready package.",
       fuelType: "Petrol", transmission: "Manual", mileage: "35,000 km", color: "White", condition: "New",
      }
   ]
@@ -377,9 +377,9 @@ const toggleFavorite = (car) => {
         )}
 
       {/* Main Content */}
-      <div className="col overflow-auto p-4" style={{height: "100vh", width: "100%", position: "relative"}}>
+      <div className="col overflow-auto p-4 px-3" style={{height: "100vh", width: "100%", position: "relative"}}>
           <div className="container-fluid d-flex justify-content-center">
-            <div className="row searching-container" style={{display: "flex", backgroundColor: "rgb(27, 27, 27)", padding: "10px", zIndex: "2", maxHeight: "200px", maxWidth: "1000px", position: "fixed"}}>
+            <div className="row searching-container" style={{display: "flex", backgroundColor: "rgb(27, 27, 27)", padding: "10px", zIndex: "2", maxHeight: "200px", maxWidth: "1100px", position: "fixed"}}>
                 <div className="col-12 col-md-4 col-lg-4 p-3 d-flex justify-content-center">
                   <div className="car-amount" style={{color: "rgb(255, 255, 255)", fontFamily: "Poppins"}}><strong>{carCount} {""} Cars Found</strong></div>
                 </div>
@@ -390,10 +390,9 @@ const toggleFavorite = (car) => {
                 </form>
                 </div>
             </div>
-
         </div>
      
-  <div id="car-sell-card-container">
+  <div id="car-sell-card-container" className="d-flex justify-content-center" style={{flexDirection: "column"}}>
     {filteredCars.length > 0 ? (
       filteredCars.map((car) => (
       <CarSellCard key={car.id} car={car} toggleFavorite={toggleFavorite} isFavorite={favorites.some(fav => fav.id === car.id)}/>
@@ -412,18 +411,17 @@ const toggleFavorite = (car) => {
 
      {/* The LightBox Comopnent */}
       { isWarningBox && (
-          <div className="coming-soon-box" style={{maxWidth: "400px", width: "100%", zIndex: "2000"}}>
-              <div className="d-flex justify-content-center align-items-center" style={{width: "100%"}}>
-                  <Hourglass className='hour-glass'/>
-                  <div className='heading'> Coming Soon!</div>
-              </div>
-              <button className='close-button' onClick={() => setIsWarningBox(false)}><X/></button>
-              <div className='hrzntl-line'></div>
-              
-              <p>Oops! 🔧 Filters are part of this UI demo and not connected to a real database</p>
-              <button className='gotcha-btn' onClick={() => setIsWarningBox(false)}>Gotcha!</button>
+      <div className="coming-soon-box" style={{maxWidth: "400px", width: "100%", zIndex: "2000"}}>
+          <div className="d-flex justify-content-center align-items-center" style={{width: "100%"}}>
+              <Hourglass className='hour-glass'/>
+              <div className='heading'> Coming Soon!</div>
           </div>
+          <button className='close-button' onClick={() => setIsWarningBox(false)}><X/></button>
+          <div className='hrzntl-line'></div>
           
+          <p>Oops! 🔧 Filters are part of this UI demo and not connected to a real database</p>
+          <button className='gotcha-btn' onClick={() => setIsWarningBox(false)}>Gotcha!</button>
+      </div>
       ) }
 
     </>

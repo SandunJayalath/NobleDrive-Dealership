@@ -463,7 +463,7 @@ function SingleProduct(props) {
                             <SubCarCard carImage="https://www.mclarencf.com/imagetag/104/main/l/Used-2020-Ford-Mustang-Shelby-GT500.jpg"
                                 carName="Mustang GT500"
                                 price="$78,000"
-                                seats="04 "
+                                seats="02 "
                                 description="White Color BMW Well Used Super features Car"/>
                             <SubCarCard carImage="https://th.bing.com/th/id/OIP.leJwpzGbZmZQ3N5fb-MrxAHaE6?rs=1&pid=ImgDetMain"
                                 carName="Chevy Camaro"
