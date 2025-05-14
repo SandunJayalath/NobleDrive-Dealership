@@ -29,7 +29,6 @@ import bmw from '../assets/bmwLogo.png'
 import lambo from '../assets/lambo.png'
 import benz from '../assets/benzLogo.png'
 import profile from '../assets/profile.png'
-import comparing from '../assets/carComparisons.png'
 import loanImage from '../assets/car-loan.png'
 import newsletter from '../assets/newsletterImage.png'
 
@@ -426,7 +425,7 @@ function Home() {
             <div className="row" style={{display: "flex", alignItems: "center", maxHeight: "1200px", paddingBottom: "50px"}}>
                 <div className="col-12 col-lg-6 col-md-12 col-sm-12 col-xl-6 d-flex justify-content-center" style={{marginTop: "25px", marginBottom: "25px"}}>
                     <div ref={left2} className={`from-left ${isVisible3 ? 'visible' : ''}`}>
-                        <img src={comparing} alt="Trade-In Car Image" width="360px" style={{borderRadius: "20px"}}/>
+                        <img src="carComparisons.png" alt="Trade-In Car Image" width="360px" style={{borderRadius: "20px"}}/>
                     </div>
                 </div>
                 <div id="image-text-section" className="col-12 col-lg-6 col-md-12 col-sm-12 col-xl-6" style={{textAlign: "left", color: "white", marginTop: "25px", marginBottom: "25px"}}>
