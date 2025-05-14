@@ -390,7 +390,7 @@ function WishList(){
                     </div>
                     </div>
                 </div>
-            <div style={{marginTop: "-70px"}}><NormalButton path="./CarsForSale" text="View Our Collection"/></div>
+            <div style={{marginTop: "-70px"}}><NormalButton path="/CarsForSale" text="View Our Collection"/></div>
         </div>
 
         <div className="container" style={{marginTop: "40px", marginBottom :"40px", maxWidth: "900px"}}>

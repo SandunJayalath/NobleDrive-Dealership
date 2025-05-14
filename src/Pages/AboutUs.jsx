@@ -30,6 +30,7 @@ import brand from '../assets/BrandLogo.png'
 import mission from '../assets/missionImage.png'
 import history from '../assets/historyImage.png'
 import profile from '../assets/profile.png'
+import backgroundImage from '../assets/aboutPageHeader.png'
 
 function AboutUs() {
 
@@ -66,7 +67,7 @@ function AboutUs() {
 
         <div className="pages">
         <HeaderImage 
-            backgroundImage="https://th.bing.com/th/id/R.3224e8b4ad69e7d92a0bb45c8123f439?rik=HTWgNDbkSCAk3A&pid=ImgRaw&r=0"
+            backgroundImage={backgroundImage}
             heading="Driven by Trust, Powered by Quality"
             paragraph="At SD Dealership, we help you find the perfect car with great prices and a hassle-free experience."
             buttonText="Explore Our Inventory"

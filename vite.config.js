@@ -7,6 +7,6 @@ export default defineConfig({
     outDir: 'build',
     assetsDir: 'assets',
   },
+  base: '/NobleDrive-Dealership/', // ✅ Important!
   plugins: [react()],
-  base: '/NobleDrive-Dealership/',
 })

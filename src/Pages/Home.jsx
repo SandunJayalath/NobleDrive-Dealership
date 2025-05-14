@@ -25,7 +25,6 @@ import { Keyboard } from 'lucide-react';
 import { FaPaperPlane } from "react-icons/fa";
 import { Hourglass } from 'lucide-react';
 import { X } from 'lucide-react';
-import bmw from '../assets/bmwLogo.png'
 import lambo from '../assets/lambo.png'
 import benz from '../assets/benzLogo.png'
 import profile from '../assets/profile.png'
@@ -120,7 +119,7 @@ function Home() {
 
                 <CarBrandsGroup
                 path=""
-                carImage="/NobleDrive-Dealership/assets/bmwLogo.png"
+                carImage={`${import.meta.env.BASE_URL}assets/bmwLogo.png`}
                 carName="BMW"/>
                 
                 <CarBrandsGroup
