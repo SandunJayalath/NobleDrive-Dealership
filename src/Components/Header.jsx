@@ -1,12 +1,13 @@
 import NormalButton from "./NormalButton";
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
+import backgroundImage from '../assets/header-image.png'
 
 function Header() {
 
     return (
         <>
-        <div id="hero" className="d-flex" style={{backgroundImage: `url(header-image.png)`}}>
+        <div id="hero" className="d-flex" style={{backgroundImage: `url(${backgroundImage})`}}>
         <div className="container-fluid img-fluid d-flex justify-content-center" style={{textAlign: "center", flexDirection: "column", width: "100%"}}>
                     <h1 className="fw-bold">Drive Your Dream Car Today!</h1>
                     <div className="align-items-center" style={{alignItems: "center"}}>
