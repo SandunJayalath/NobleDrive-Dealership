@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   build: {
     outDir: 'build',
+    assetsDir: 'assets',
   },
   plugins: [react()],
   base: '/NobleDrive-Dealership/',
