@@ -1,0 +1,176 @@
+/* Collapsing buttons Styles */
+
+div#collapseButton h5 {
+    color: rgba(0, 0, 0, 0.966);
+    width: 100%;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+@media (min-width: 1150px) {
+    div#collapse-cards {
+        padding: 0px 200px;
+    }
+}
+
+div#collapsed-container {
+    background-color: rgba(255, 255, 255, 0.938);
+    cursor: default;
+    margin: 0;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+div#collapse-card {
+    transition: 0.3s;
+    background-color: rgba(165, 165, 165, 0.288);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    border-radius: 10px;
+}
+div#collapse-card:hover {
+    border-color: rgb(0, 89, 255);
+}
+
+div#car-info-card {
+    background-color: rgb(206, 206, 206);
+    max-width: 430px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.image-section img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 30px 0px;
+}
+
+
+@media (max-width: 700px) {
+    div#car-info-card {
+        width: 380px;
+    }
+    .image-section img {
+        width: 360px;
+    }
+}
+
+h4#price{
+    text-align: center;
+    background-color: rgb(255, 115, 0);
+    color: white;
+    font-weight:bold;
+    padding: 10px;
+    transition: 0.1s;
+}
+h4#price:hover {
+    background-color: rgb(212, 97, 3);
+}
+
+button#switch-car {
+    background-color: rgb(25, 83, 160);
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 0px 30px;
+    transition: 0.3s;
+    border: none;
+}
+
+button#switch-car:hover {
+    background-color: rgb(9, 34, 66);
+}
+
+.closing-icon {
+    width: 30px;
+    color: rgb(29, 29, 29);
+    height: auto;
+    border-radius: 50%;
+    padding: 1px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.closing-icon:hover {
+    background-color: rgb(163, 163, 163);
+}
+
+div#menu button{
+    border-radius: 20px;
+    padding: 0px 10px;
+    border: 2px solid rgb(5, 21, 240);
+    color: white;
+    background-color: rgb(8, 86, 230);
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+    position: absolute;
+    right: 15%;
+    top: 140px;
+}
+
+@media (max-width: 1600px) {
+    div#menu button{
+        right: 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    div#menu button{
+        right: 10px;
+        top: 86px;
+    }
+}
+
+div#menu button:hover {
+    background-color: rgb(25, 55, 112);
+}
+
+div#button-list button{
+    background-color: rgb(21, 138, 247);
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+}
+div#button-list button:hover {
+    background-color: rgb(13, 61, 105);
+}
+
+.download-button{
+    margin-top: 20px;
+    background-color: rgb(247, 21, 21);
+    border: none;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+}
+.download-button:hover {
+    background-color: rgb(134, 16, 42);
+}
+
+table#specification-table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 600px;
+}
+
+table#specification-table tr th {
+    padding: 10px 20px;
+    background-color: rgb(5, 72, 255);
+    color: white;
+    border: 2px solid rgb(1, 14, 26);
+    font-size: 17px;
+}
+
+table#specification-table tr td {
+    padding: 10px 13px;
+    border: 2px solid rgb(8, 76, 131);
+    font-weight: 600; 
+}

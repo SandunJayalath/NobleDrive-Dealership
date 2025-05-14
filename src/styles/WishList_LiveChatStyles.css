@@ -1,0 +1,261 @@
+/* Live Chat Page Styles */
+
+div#live-chat-page {
+    margin: 0;
+    overflow: hidden;
+  }
+  @media (max-width: 968px) {
+  
+    div#live-chat-page {
+      overflow: auto;
+    }
+  
+    .live-chat-texts {
+      padding: 0px;
+    }
+  }
+  
+  .live-chat-texts {
+    padding: 40px;
+  }
+  
+  div#live-chatting-full-container {
+    background-color: rgba(0, 0, 0, 0.56);
+    text-align: center;
+    color: white;
+    padding: 30px;
+    position: relative;
+  }
+  
+  .chat-component-pattern {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .chat-components-area {
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    justify-content: center;
+    margin: 0px;
+    border: 3px solid rgb(54, 54, 54);
+    border-radius: 10px 10px 0px 0px;
+    align-items: center;
+    padding: 10px 0px;
+  }
+
+  .the-message {
+    background-color: rgba(60, 151, 255, 0.74);
+    color: white;
+    padding: 10px 7px;
+    border-radius: 10px;
+    min-width: 300px;
+    max-width: 350px;
+    width: 100%;
+    min-height: 50px;
+    height: auto;
+    text-align: left;
+  }
+  
+  .live-messaging-area {
+    padding: 5px;
+    width: 60%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 89, 255);
+    min-height: 60px;
+    margin: 0px;
+  }
+
+  .live-messaging-area:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgb(7, 7, 165);
+  }
+
+    .sending-msg-area {
+      height: 670px;
+      bottom: 80px;
+    }
+
+    .sending-msg-area::-webkit-scrollbar {
+      background-color: black;
+      border-radius: 10px;
+      width: 7px
+    }
+
+    .sending-msg-area::-webkit-scrollbar-thumb {
+      background-color: #ebebeb;
+      width: 7px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 950px) {
+    .sending-msg-area {
+      height: 430px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+  
+    div#live-chatting-full-container {
+      padding: 18px;
+    }
+    .chat-components-area {
+      height: 150px;
+    }
+    .chat-component-pattern {
+      justify-content: flex-start;
+      padding-left: 5px;
+    }
+    .live-messaging-area {
+      position: absolute;
+      bottom: 10px;
+      width: 95%;
+      height: 77px;
+    }
+     .sending-msg-area {
+      bottom: 150px;
+    }
+  }
+  
+  button#live-chat-send-btn {
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: white;
+  }
+  .send-icon:hover{
+    color: rgb(0, 102, 255);
+  }
+
+  .error-message {
+    background-color: rgb(22, 22, 22);
+    padding: 20px;
+    color: rgb(199, 199, 199);
+    border: 2px solid red;
+    text-align: left;
+    border-radius: 10px;
+    max-width: 450px;
+    width: 100%;
+  }
+
+  .error-close {
+    border: none;
+    background-color: transparent;
+    color: white;
+    right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  .error-close:hover {
+    color: rgb(134, 134, 134);
+  }
+
+    @keyframes popUpError {
+    0% {
+      opacity: 0;
+      transform: scale(0.9) translate(-50%, -50%);
+    }
+    75% {
+      opacity: 1;
+      transform: scale(1.02) translate(-50%, -50%);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) translate(-50%, -50%);
+      width: 100%;
+    }
+  }
+
+  
+/* Wish list Styles */
+
+  .offcanvas {
+    margin-top: 0px;
+  }
+
+  .offcanvas.show {
+    transition: 0.3s;
+    animation: offCanvasAnimation 0.3s forwards ease-in-out;
+  }
+  
+  @keyframes offCanvasAnimation {
+    0% {
+      opacity: 0
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .wish-list-main-container {
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: auto;
+    width: 100%;
+  }
+
+  @media (max-width: 850px) {
+    .wish-list-main-container {
+      overflow: hidden;
+      height: 100%;
+    }
+  }
+  
+  .wish-list-tab-content h5{
+    font-weight: bold;
+  }
+  
+  .wish-list-tab-content button{
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-weight: bold;
+    color: rgb(27, 27, 27);
+    border: 2px solid rgb(117, 112, 112);
+    transition: all 0.3s;
+  
+  }
+  
+  .wish-list-tab-content button:hover {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(128, 128, 128));
+  }
+  
+  .menu-button {
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+  }
+
+  input#input-box {
+    color: rgb(8, 32, 97);
+    border-color: black;
+    background-color: white;
+    border-radius: 30px;
+    transition: 0.3s;
+    margin-top: 10px;
+    width: 50%;
+    padding: 5px 10px;
+  }
+  
+  input#input-box:hover {
+    border-color: blue;
+    background-color: rgb(231, 231, 231);
+  }
+
+  a#social-media-icons {
+    padding: 3px;
+  }
+   
+  a#social-media-icons:hover {
+    transform: scale(1.05); /* Slightly scales up the card */
+  }
