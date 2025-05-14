@@ -14,6 +14,7 @@ import { Filter } from 'lucide-react';
 import { Hourglass } from 'lucide-react';
 import { X } from 'lucide-react';
 import { Search } from 'lucide-react';
+import bmw from '../assets/bmwLogo.png'
 import lambo from '../assets/lambo.png'
 import benz from '../assets/benzLogo.png'
 
@@ -158,7 +159,7 @@ const toggleFavorite = (car) => {
                      <CarTypesLinks type="VOLVO"/></div>
                  </div>
                   <h6 style={{textAlign: "center", marginBottom: "20px"}}>You may also Like!</h6>
-                    <img className="hovering-get-large" src={`${import.meta.env.BASE_URL}assets/bmwLogo.png`} style={{height: "50px", width: "auto", margin: "8px"}} alt=""/>
+                    <img className="hovering-get-large" src={bmw} style={{height: "50px", width: "auto", margin: "8px"}} alt=""/>
                     <img className="hovering-get-large" src={benz} style={{height: "50px", width: "auto", margin: "8px"}} alt=""/>
                     <img className="hovering-get-large" src={lambo} style={{height: "50px", width: "auto", margin: "8px"}} alt=""/>
                     <img className="hovering-get-large" src="https://pngimg.com/uploads/bentley/bentley_PNG34.png" style={{height: "50px", width: "auto", margin: "8px"}} alt=""/>
@@ -291,7 +292,7 @@ const toggleFavorite = (car) => {
                  </div>
                  <h6 style={{textAlign: "center", marginBottom: "20px"}}>You may also Like!</h6>
                  <div className="container" style={{textAlign: "center"}}>
-                  <img className="hovering-get-large" src={`${import.meta.env.BASE_URL}assets/bmwLogo.png`} style={{height: "50px", width: "auto", margin: "8px"}} alt=""/>
+                  <img className="hovering-get-large" src={bmw} style={{height: "50px", width: "auto", margin: "8px"}} alt=""/>
                   <img className="hovering-get-large" src={benz} style={{height: "50px", width: "auto", margin: "8px"}} alt=""/>
                   <img className="hovering-get-large" src={lambo} style={{height: "50px", width: "auto", margin: "8px"}} alt=""/>
                   <img className="hovering-get-large" src="https://pngimg.com/uploads/bentley/bentley_PNG34.png" style={{height: "50px", width: "auto", margin: "8px"}} alt=""/>

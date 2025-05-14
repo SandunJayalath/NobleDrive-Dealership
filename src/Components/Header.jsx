@@ -4,11 +4,9 @@ import { Link } from 'react-router-dom'
 
 function Header() {
 
-    const backgroundUrl = `${import.meta.env.BASE_URL}assets/header-image.png`;
-
     return (
         <>
-        <div id="hero" className="d-flex" style={{backgroundImage: `url(${backgroundUrl})`}}>
+        <div id="hero" className="d-flex" style={{backgroundImage: `url(header-image.png)`}}>
         <div className="container-fluid img-fluid d-flex justify-content-center" style={{textAlign: "center", flexDirection: "column", width: "100%"}}>
                     <h1 className="fw-bold">Drive Your Dream Car Today!</h1>
                     <div className="align-items-center" style={{alignItems: "center"}}>
