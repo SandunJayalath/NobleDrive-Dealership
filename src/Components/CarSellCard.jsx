@@ -23,9 +23,9 @@ function CarSellCard({car, toggleFavorite, isFavorite}){
                 <h5 style={{webkitTextFillColor: "rgb(48, 48, 48)"}}><strong>{car.year}</strong></h5>
                 <h6 className="card-text" style={{fontSize: "16px", webkitTextFillColor: "rgb(43, 43, 43)"}}>{car.description}</h6>
                 
-                <div className="d-flex" style={{height: "30px", alignItems: "center", gap: "10px"}}>
+                <div className="d-flex quality" style={{height: "30px", alignItems: "center", gap: "10px"}}>
                   <h6><strong>{car.fuelType}</strong></h6>
-                  <div style={{width: "2px", height: "100%", backgroundColor: "rgb(0, 0 ,0)"}}></div>
+                  <div style={{width: "2px", height: "100%", backgroundColor: "rgb(54, 54, 54)"}}></div>
                   <h6><strong>{car.transmission}</strong></h6>
                 </div>
 

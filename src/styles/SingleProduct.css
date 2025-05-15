@@ -137,6 +137,16 @@
     background-color: rgb(70, 69, 69);
   }
 
+  .product-review-scroll-container {
+    max-height: 240px;
+  }
+
+  @media (max-width: 700px) {
+    .product-review-scroll-container {
+      max-height: 340px;
+    }
+  }
+
   .scroll-down-indicator {
     background-color: rgb(24, 24, 24);
     border-radius: 50%;

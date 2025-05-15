@@ -32,6 +32,20 @@ div#live-chat-page {
     justify-content: center;
     align-items: center;
   }
+
+  .live-chat-container h3 {
+    text-align: center;
+  }
+
+  .live-chat-container p {
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .live-chat-container p {
+        text-align: left;
+    }
+  }
   
   .chat-components-area {
     background-color: black;
@@ -197,19 +211,10 @@ div#live-chat-page {
   .wish-list-main-container {
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    overflow: auto;
     width: 100%;
     max-width: 1100px;
   }
 
-  @media (max-width: 850px) {
-    .wish-list-main-container {
-      overflow: hidden;
-      height: 100%;
-    }
-  }
-  
   .wish-list-tab-content h5{
     font-weight: bold;
   }
@@ -223,7 +228,6 @@ div#live-chat-page {
     color: rgb(27, 27, 27);
     border: 2px solid rgb(117, 112, 112);
     transition: all 0.3s;
-  
   }
   
   .wish-list-tab-content button:hover {

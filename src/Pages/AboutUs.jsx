@@ -26,6 +26,7 @@ import { Star } from 'lucide-react';
 import { Sunrise } from 'lucide-react';
 import { Tag } from 'lucide-react';
 import { Shield } from 'lucide-react';
+import { FaStar } from 'react-icons/fa';
 import brand from '../assets/BrandLogo.png'
 import mission from '../assets/missionImage.png'
 import history from '../assets/historyImage.png'
@@ -61,6 +62,13 @@ function AboutUs() {
         }
     }
 
+    // For setting the stars
+    const [isClicked1, setIsClicked1] = useState(false);
+    const [isClicked2, setIsClicked2] = useState(false);
+    const [isClicked3, setIsClicked3] = useState(false);
+    const [isClicked4, setIsClicked4] = useState(false);
+    const [isClicked5, setIsClicked5] = useState(false);
+
     return(
         <>
         <NavBar/>
@@ -69,7 +77,7 @@ function AboutUs() {
         <HeaderImage 
             backgroundImage={backgroundImage}
             heading="Driven by Trust, Powered by Quality"
-            paragraph="At SD Dealership, we help you find the perfect car with great prices and a hassle-free experience."
+            paragraph="At NobleDrive, we help you find the perfect car with great prices and a hassle-free experience."
             buttonText="Explore Our Inventory"
             path="/CarsForSale"/>
 
@@ -80,7 +88,7 @@ function AboutUs() {
                 </div>
 
                 <div className="col-lg-6 col-12 col-md-6 text-center d-flex justify-content-center" style={{flexDirection: "column", alignItems: "center"}}>
-                    <h2 id="the-quote" style={{fontFamily: "Poppins", fontWeight: "600"}}><Quote className="quote me-2" style={{transform: "rotate(180deg)"}}/>Driven by trust, powered by passion-SD Dealerships isn’t just about cars; <br/> it’s about connecting you with the journey of your dreams.<Quote className="quote ms-2"/></h2>
+                    <h2 id="the-quote" style={{fontFamily: "Poppins", fontWeight: "600"}}><Quote className="quote me-2" style={{transform: "rotate(180deg)"}}/>Driven by trust, powered by passion-NobleDrive isn’t just about cars; <br/> it’s about connecting you with the journey of your dreams.<Quote className="quote ms-2"/></h2>
                         <div className="container" style={{display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", paddingTop: "20px", fontSize: "15px", maxWidth: "350px", color: "rgba(0, 0, 0, 0.69)"}}> 
                             <div style={{display: "grid", placeItems: "center"}}><strong><FaPhone color="black" size="25px" style={{marginRight: "10px"}}/>+94-63514851</strong></div>
                                 <div style={{width: "2px", height: "50px", backgroundColor: "rgb(109, 109, 109)"}}></div>
@@ -90,11 +98,11 @@ function AboutUs() {
             </div>
         </div>
 
-        <div className="row container-fluid d-flex justify-content-center" style={{backgroundColor: "rgba(224, 224, 224, 0.51)", padding: "10px", marginTop: "20px", textAlign: "center", alignItems: "center"}}>
-            <div id="container">
+        <div className="row container-fluid d-flex justify-content-center" style={{backgroundColor: "rgba(224, 224, 224, 0.51)", padding: "0px", marginTop: "20px", textAlign: "center", alignItems: "center"}}>
                 <div style={{marginTop: "50px"}}><HeaderTopic text="Why Choose Us?"/></div>
                 <Description paragraph="At our dealership, we pride ourselves on offering exceptional service, a wide range of top-quality vehicles, and a hassle-free buying experience. With competitive pricing, expert advice, and a commitment to customer satisfaction, we make finding your perfect car easy and enjoyable."/>
-                    <div className="row d-flex mb-4">
+                    <div className="container-lg d-flex align-items-center" style={{flexDirection: "column"}}>
+                    <div className="row d-flex mb-4" style={{maxWidth: "1600px"}}>
                         <div className="col-12 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center">
                             <ImgTextCards 
                                 heading="Good Service" 
@@ -136,7 +144,7 @@ function AboutUs() {
                 <div className="col-12 col-lg-8 col-md-12 col-sm-12 col-xl-8 image-text-section-about">
                     <h1 style={{marginBottom: "20px"}}><strong>What Is NobleDrive</strong></h1>
                     <p style={{fontFamily: "Inter"}}>Welcome to NobleDrive, where your journey to the perfect car begins! 🚗✨
-                    At SD Dealership, we don’t just sell cars—we create experiences. Whether you're hunting for the latest models, a reliable pre-owned vehicle, or expert advice, we’re here to guide you every step of the way.
+                    At NobleDrive, we don’t just sell cars—we create experiences. Whether you're hunting for the latest models, a reliable pre-owned vehicle, or expert advice, we’re here to guide you every step of the way.
                     Think of us as your trusted pit stop for everything automotive: exceptional selection, personalized service, and unbeatable deals—all in one place. Ready to take the driver’s seat in your next adventure? Let’s make it happen!</p>
                     <SpecialButton text="Check Our Inventory" path="/CarsForSale"/>
                 </div>
@@ -156,8 +164,8 @@ function AboutUs() {
             </div>
                 <div className="col-12 col-lg-8 col-md-12 col-sm-12 col-xl-8 mt-4 mt-md-4 mt-lg-0 mt-xl-0 image-text-section-about">
                     <h1 style={{marginBottom: "20px"}}><strong>What is our Mission and Value</strong></h1>
-                    <p style={{fontFamily: "Inter"}}>Our mission is simple: to make your car-buying journey as seamless and enjoyable as possible. At SD Dealership, we are driven by core values of integrity, trust, and excellence. We believe in treating every customer like family, offering transparency, personalized service, and expert guidance. Whether you’re looking for a reliable commuter, a family SUV, or your dream luxury car, we are committed to helping you find the perfect fit while delivering an experience that exceeds expectations.</p>
-                    <p style={{fontFamily: "Inter"}}>At SD Dearlership passion for cars is matched only by our dedication to our customers. We strive to build lasting relationships by understanding your needs and delivering solutions that fit your lifestyle. Beyond selling vehicles, we are committed to being a dealership you can rely on for honest advice, quality service, and ongoing support long after your purchase. Your satisfaction is our driving force, and we’re here to ensure every mile of your journey is a smooth and enjoyable one.</p>
+                    <p style={{fontFamily: "Inter"}}>Our mission is simple: to make your car-buying journey as seamless and enjoyable as possible. At NobleDrive, we are driven by core values of integrity, trust, and excellence. We believe in treating every customer like family, offering transparency, personalized service, and expert guidance. Whether you’re looking for a reliable commuter, a family SUV, or your dream luxury car, we are committed to helping you find the perfect fit while delivering an experience that exceeds expectations.</p>
+                    <p style={{fontFamily: "Inter"}}>At NobleDrive passion for cars is matched only by our dedication to our customers. We strive to build lasting relationships by understanding your needs and delivering solutions that fit your lifestyle. Beyond selling vehicles, we are committed to being a dealership you can rely on for honest advice, quality service, and ongoing support long after your purchase. Your satisfaction is our driving force, and we’re here to ensure every mile of your journey is a smooth and enjoyable one.</p>
                 </div>
             </div>
             </div>
@@ -168,8 +176,8 @@ function AboutUs() {
             <div className="row" style={{display: "flex", alignItems: "center", maxHeight: "1200px"}}>
                 <div className="col-12 col-lg-8 col-md-12 col-sm-12 col-xl-8 image-text-section-about">
                     <h1 style={{marginBottom: "20px"}}><strong>The History of Ours</strong></h1>
-                    <p style={{fontFamily: "Inter"}}>Established in 2024, SD Dealerships has grown from a humble, single-location dealership into a trusted name in the automotive industry. Founded by Tony Hawk, our journey began with a simple mission: to provide quality vehicles and exceptional service to our community.</p>
-                    <p style={{fontFamily: "Inter"}}>Over the years, SD Dealerships has expanded its operations, earning a reputation for reliability, integrity, and a customer-first approach. From introducing innovative financing options to building a state-of-the-art showroom, we have continuously evolved to meet the changing needs of our valued customers.As a family-owned and operated business, SD Dealerships remains deeply committed to fostering long-term relationships with our customers and community. Whether you're buying your first car or upgrading to your dream vehicle, our legacy of excellence ensures you’re in good hands.</p>
+                    <p style={{fontFamily: "Inter"}}>Established in 2024, NobleDrive has grown from a humble, single-location dealership into a trusted name in the automotive industry. Founded by Tony Hawk, our journey began with a simple mission: to provide quality vehicles and exceptional service to our community.</p>
+                    <p style={{fontFamily: "Inter"}}>Over the years, NobleDrive has expanded its operations, earning a reputation for reliability, integrity, and a customer-first approach. From introducing innovative financing options to building a state-of-the-art showroom, we have continuously evolved to meet the changing needs of our valued customers.As a family-owned and operated business, NobleDrive remains deeply committed to fostering long-term relationships with our customers and community. Whether you're buying your first car or upgrading to your dream vehicle, our legacy of excellence ensures you’re in good hands.</p>
                 </div>
 
                 <div className="col-12 col-lg-4 col-md-12 col-sm-12 col-xl-4 d-flex justify-content-center align-items-center">
@@ -231,17 +239,23 @@ function AboutUs() {
                     amount="3.0"
                     review="What impressed me most was the follow-up after the purchase. The team reached out to ensure I was happy and offered support if I had any questions. That level of care really stood out. I’d definitely recommend this dealership to anyone looking for a top-tier sports car and customer service to match."/>
                 </div>
-                
                 </div>
             </div>
             <div id="chatting-section" className="container-fluid mt-0 mb-0" style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
                 <HeaderTopic text="Share Your Experience With Us"/>
                 <Description paragraph="Your review helps us grow and serve you better."/>
                 <form  onSubmit={handleReview}>
+                    <div className="d-flex justify-content-end mb-3 gap-2 ">
+                        <FaStar onClick={() => setIsClicked1(!isClicked1)} className={`${isClicked1 ? `clicked-star` : `normal-star`}`}/>
+                        <FaStar onClick={() => setIsClicked2(!isClicked2)} className={`${isClicked2 ? `clicked-star` : `normal-star`}`}/>
+                        <FaStar onClick={() => setIsClicked3(!isClicked3)} className={`${isClicked3 ? `clicked-star` : `normal-star`}`}/>
+                        <FaStar onClick={() => setIsClicked4(!isClicked4)} className={`${isClicked4 ? `clicked-star` : `normal-star`}`}/>
+                        <FaStar onClick={() => setIsClicked5(!isClicked5)} className={`${isClicked5 ? `clicked-star` : `normal-star`}`}/>
+                    </div>
+
                     <div className="row d-flex justify-content-center">
                         <textarea id="smart-filtering-text-areas" className="reviews-sending-text-area" style={{backgroundColor: "rgb(46, 46, 46)", width: "99%", minHeight: "100px", color: "white", textAlign: "left", padding: "10px", borderRadius: "10px"}} type="text" placeholder="Give us a review about our service" value={review} onChange={(e) => setReview(e.target.value)}/>
                         <button id="submit-button" className="d-flex justify-content-center"><strong><Send size="20px" style={{marginRight: "10px"}}/>Send</strong></button>
-                    
                     </div>
                 </form>
             </div>

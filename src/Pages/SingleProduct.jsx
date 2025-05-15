@@ -8,6 +8,7 @@ import SingleProductSlider from "../Components/SingleProductSlider";
 import InputArea from "../Components/Calculating File Components/InputArea";
 import Description from "../Components/Description";
 import TestimonialCard from "../Components/TestimonialCard";
+import TestimonialStars from "../Components/TestimonialStars";
 import React, { useState } from 'react';
 import Slider from "react-slick";
 import { useRef, useEffect } from "react";
@@ -204,6 +205,14 @@ function SingleProduct(props) {
         }
     }
 
+     // For setting the stars
+    const [isClicked1, setIsClicked1] = useState(false);
+    const [isClicked2, setIsClicked2] = useState(false);
+    const [isClicked3, setIsClicked3] = useState(false);
+    const [isClicked4, setIsClicked4] = useState(false);
+    const [isClicked5, setIsClicked5] = useState(false);
+
+
     return(
         <>
         <NavBar/>
@@ -369,7 +378,7 @@ function SingleProduct(props) {
                         <HeaderTopic text="Customers Reviews" style={{webkitTextFillColor: "white"}}/>
                             <h6>See what our happy customers have to say about the cars they've purchased from us! 🚗💬 Their words say it all — real experiences, real satisfaction.</h6>
                             
-                            <div className="mt-4 product-review-scroll-container" style={{ maxHeight: "240px", overflow: "scroll", border: "1px solid #ccc", padding: "10px", backgroundColor: "rgba(0, 0, 0, 0)", border: "none", overflowX: "hidden"}}
+                            <div className="mt-4 product-review-scroll-container" style={{overflow: "scroll", border: "1px solid #ccc", padding: "10px", backgroundColor: "rgba(0, 0, 0, 0)", border: "none", overflowX: "hidden"}}
                                 onMouseEnter={(e) => {
                                 e.currentTarget.style.overflowY = "scroll";
                                 }}
@@ -380,26 +389,55 @@ function SingleProduct(props) {
                             <TestimonialCard 
                                 name="Dan"
                                 image={profile}
-                                rating={5}
-                                amount="5.0"
+                                data={
+                                    <>
+                                    <TestimonialStars/>
+                                    <TestimonialStars/>
+                                    <TestimonialStars/>
+                                    <TestimonialStars/>
+                                    </>
+                                }
+                                amount="4.0"
                                 review="I recently purchased a Chevrolet Camaro which is super cool from SD Dealerships, and I'm absolutely in love with it! The tailoring is impeccable, and the fabric feels luxurious and breathable. It instantly elevates any outfit, and I've received so many compliments. Zara's customer service was also fantastic, with quick delivery and careful packaging. It's a wardrobe staple I'll cherish for years!"/>
 
                             <TestimonialCard 
                                 name="Cooper"
                                 image={profile}
-                                rating={5}
-                                amount="5.0"
+                                data={
+                                    <>
+                                    <TestimonialStars/>
+                                    <TestimonialStars/>
+                                    <TestimonialStars/>
+                                    <TestimonialStars/>
+                                    </>
+                                }
+                                amount="4.0"
                                 review="I recently purchased a Chevrolet Camaro which is super cool from SD Dealerships, and I'm absolutely in love with it! The tailoring is impeccable, and the fabric feels luxurious and breathable. It instantly elevates any outfit, and I've received so many compliments. Zara's customer service was also fantastic, with quick delivery and careful packaging. It's a wardrobe staple I'll cherish for years!"/>
 
                             <TestimonialCard 
                                 name="Tom"
                                 image={profile}
-                                rating={5}
-                                amount="5.0"
+                                data={
+                                <>
+                                    <TestimonialStars/>
+                                    <TestimonialStars/>
+                                    <TestimonialStars/>
+                                    <TestimonialStars/>
+                                    </>
+                                }
+                                amount="4.0"
                                 review="I recently purchased a Chevrolet Camaro which is super cool from SD Dealerships, and I'm absolutely in love with it! The tailoring is impeccable, and the fabric feels luxurious and breathable. It instantly elevates any outfit, and I've received so many compliments. Zara's customer service was also fantastic, with quick delivery and careful packaging. It's a wardrobe staple I'll cherish for years!"/>
                             </div>
 
                             <form onSubmit={handleReview}>
+                            <div className="d-flex justify-content-center mb-3 gap-2 mt-3">
+                                <FaStar onClick={() => setIsClicked1(!isClicked1)} className={`${isClicked1 ? `clicked-star` : `normal-star`}`}/>
+                                <FaStar onClick={() => setIsClicked2(!isClicked2)} className={`${isClicked2 ? `clicked-star` : `normal-star`}`}/>
+                                <FaStar onClick={() => setIsClicked3(!isClicked3)} className={`${isClicked3 ? `clicked-star` : `normal-star`}`}/>
+                                <FaStar onClick={() => setIsClicked4(!isClicked4)} className={`${isClicked4 ? `clicked-star` : `normal-star`}`}/>
+                                <FaStar onClick={() => setIsClicked5(!isClicked5)} className={`${isClicked5 ? `clicked-star` : `normal-star`}`}/>
+                            </div>
+
                             <div className="row d-flex mt-4 justify-content-center" style={{gap: "0px"}}>
                                 <textarea style={{backgroundColor: "rgb(46, 46, 46)", width: "90%", height: "100px", color: "white", borderRadius: "10px", padding: "8px 15px", border: "2px solid rgb(9, 70, 236)"}} type="text" placeholder="Type a review about the above product"  value={review} onChange={(e) => setReview(e.target.value)}/>
                                 <button id="submit-button"><strong>Submit</strong></button>
@@ -410,18 +448,22 @@ function SingleProduct(props) {
                     <div className="col-12 col-xl-6 col-lg-6 col-md-12 d-flex" style={{textAlign: "center", paddingBottom: "20px", flexDirection: "column", justifyContent: "center"}}>
                         <HeaderTopic text="Measure The Loan Payment"/>
                         <h6>Measure how much you need to pay perodically on a loan</h6>
-                        <div className="container-fluid">
-                        <div id="math-space" className="col-12 col-sm-12 col-md-4 col-lg-3" style={{border: "3px solid #003dc0", borderRadius: "20px", padding: "40px", display: "grid", placeItems: "center", backgroundColor: "rgba(241, 241, 241, 0.81)", marginTop: "40px", width: "100%"}}>
+                        <div className="container-fluid d-flex align-items-center" style={{flexDirection: "column"}}>
+                        <div id="math-space" className="col-12 col-sm-12 col-md-4 col-lg-3" style={{border: "3px solid #003dc0", borderRadius: "20px", display: "grid", placeItems: "center", backgroundColor: "rgba(241, 241, 241, 0.81)", marginTop: "40px", width: "100%", maxWidth: "450px"}}>
                             <h4 id="header-topic"><strong>Measure Loan Payment</strong></h4>
-                            <div id="math-container" className="container"> 
+                            <div id="math-container" className="container mt-3 mt-md-4 mt-lg-4 mt-xl-4"> 
                                 <InputArea statement="The Present Value" value={presentValue} onChange={handlePresentValueChange}/>
                                 <InputArea statement="The Rate per Period" value={rate} onChange={(e) =>  setRate(e.target.value)}/>
                                 <InputArea statement="The Number of Period" value={periods} onChange={(e) => setPeriods(e.target.value)}/>
                             </div>
             
-                            <div className="container-fluid d-flex justify-content-center flex-col gap-4" style={{display: "grid", placeItems: "center"}}>
-                            <button id="normal-button" onClick={handleCalculate}>Calculate</button>
-                                <div style={{marginTop: "50px"}}><input type="text" placeholder="Amount" value={payment} readOnly style={{width: "200px", border: "3px solid #003dc0", borderRadius: "40px", textAlign: "center", fontFamily: "Tilt Neon", color: "#003dc0", fontSize: "20px"}}/></div>
+                            <div className="container-fluid flex-column flex-md-row flex-lg-row flex-xl-row d-flex justify-content-center gap-1 mt-4">
+                                <div className="col-12 col-md-6 col-lg-6 col-xl-6">
+                                    <button id="normal-button" onClick={handleCalculate} style={{margin: "0px"}}>Calculate</button>
+                                </div>
+                                <div className="col-12 col-md-6 col-lg-6 col-xl-6">
+                                    <div ><input type="text" placeholder="Amount" value={payment} readOnly style={{width: "200px", border: "3px solid #003dc0", borderRadius: "40px", textAlign: "center", fontFamily: "Tilt Neon", color: "#003dc0", fontSize: "20px"}}/></div>  
+                                </div>
                             </div>
                         </div>
                         <div> 

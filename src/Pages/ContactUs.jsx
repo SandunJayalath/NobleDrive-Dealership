@@ -19,6 +19,7 @@ import { MessageCircle } from 'lucide-react';
 import { Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import contactImage from '../assets/contacting-image.png'
+import headerImage from '../assets/contactPageHeader.png'
 
 function ContactUs() {
 
@@ -50,7 +51,7 @@ function ContactUs() {
         
         <div className="pages">
         <HeaderImage 
-            backgroundImage="https://th.bing.com/th/id/R.3224e8b4ad69e7d92a0bb45c8123f439?rik=HTWgNDbkSCAk3A&pid=ImgRaw&r=0"
+            backgroundImage={headerImage}
             heading="Get in Touch with Us Today"
             paragraph="Have questions or need assistance? Our friendly team is here to help. Reach out to us, and we'll guide you through your car buying journey."
             buttonText="Explore Our Inventory"
@@ -58,7 +59,7 @@ function ContactUs() {
 
         <div className="row container-fluid">
             <div><HeaderTopic text="Contact Us"/></div>
-            <div style={{textAlign: "center"}}>
+            <div style={{padding: "0px"}}>
                 <Description paragraph="Have questions or need assistance? We're here to help!"/>
             </div>
         </div>

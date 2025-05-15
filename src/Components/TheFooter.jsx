@@ -29,7 +29,7 @@ function TheFooter() {
                         <img className='mb-3' src={brandLogo} width="100" height="auto" alt="Logo"/>
                         <h4 style={{textDecoration: "none"}}>NobleDrive</h4>
                     </Link>
-                    <p>Welcome to SD Dealership, where your journey to the perfect car begins! 🚗✨</p>
+                    <p>Welcome to NobleDrive, where your journey to the perfect car begins! 🚗✨</p>
                 </div>
 
                 <div className="col-4 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-center" style={{textAlign: "left"}}>

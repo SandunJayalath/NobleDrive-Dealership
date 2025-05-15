@@ -33,7 +33,7 @@ function SignIn(){
 
         <p id="subtle-message">🛈 This is a front-end demo only. Authentication is not connected to a server.</p>
         
-        <div id="menu-box" style={{position :"absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}}>
+        <div id="menu-box">
             <div className="container-fluid " id="sign-in-container">
             <form onSubmit={handleLogin}>
                 <div id="title"><strong>Sign In</strong></div>

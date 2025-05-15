@@ -275,7 +275,7 @@ function Home() {
 
         <div className="row" style={{textAlign: "center", padding: "0px", backgroundColor: "rgb(236, 236, 236)"}}>
             <HeaderTopic text="Best Deals on Today!"/>
-                <Description paragraph="At SD Dealerships, we’re dedicated to providing exceptional quality at every step of your car-buying journey. With a wide selection of top-rated vehicles and a team of friendly, knowledgeable staff, we ensure a seamless and enjoyable experience. Our state-of-the-art facility and certified professionals prioritize transparency, integrity, and your satisfaction. Discover the perfect vehicle with us, where your trust drives everything we do." />
+                <Description paragraph="At NobleDrive Dealerships, we’re dedicated to providing exceptional quality at every step of your car-buying journey. With a wide selection of top-rated vehicles and a team of friendly, knowledgeable staff, we ensure a seamless and enjoyable experience. Our state-of-the-art facility and certified professionals prioritize transparency, integrity, and your satisfaction. Discover the perfect vehicle with us, where your trust drives everything we do." />
                 <div style={{backgroundImage: "linear-gradient(to right, rgb(26, 26, 26), rgb(0, 0, 0))", padding: "30px 0px"}}>
                     <div className="container">
                         <Carousel responsive={responsive}>                      
@@ -329,8 +329,8 @@ function Home() {
         </div>
 
         <div className="row" style={{textAlign: "center", padding: "0px"}}>
-            <HeaderTopic text="Why SD Dealerships"/>
-                <Description paragraph="At SD Dealerships, we’re dedicated to providing exceptional quality at every step of your car-buying journey. With a wide selection of top-rated vehicles and a team of friendly, knowledgeable staff, we ensure a seamless and enjoyable experience. Our state-of-the-art facility and certified professionals prioritize transparency, integrity, and your satisfaction. Discover the perfect vehicle with us, where your trust drives everything we do." />
+            <HeaderTopic text="Why NobleDrive"/>
+                <Description paragraph="At NobleDrive Dealerships, we’re dedicated to providing exceptional quality at every step of your car-buying journey. With a wide selection of top-rated vehicles and a team of friendly, knowledgeable staff, we ensure a seamless and enjoyable experience. Our state-of-the-art facility and certified professionals prioritize transparency, integrity, and your satisfaction. Discover the perfect vehicle with us, where your trust drives everything we do." />
                     <div className="container d-flex justify-content-center" style={{backgroundColor: "rgb(210, 217, 248)", padding: "20px", maxWidth: "1500px", borderRadius: "10px", textAlign: 'center'}}>
                         <div className="row g-5 md-g-10" style={{textAlign: "center"}}>
                             <SpecialCards text="Good Service" img={<Star className="special-card-icons hovering-get-large"/>}/>

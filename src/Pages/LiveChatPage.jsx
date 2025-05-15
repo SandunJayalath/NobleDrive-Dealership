@@ -58,7 +58,7 @@ function LiveChatPage(){
         <div id="live-chat-page" style={{backgroundImage: "url('https://i.pinimg.com/originals/41/0f/62/410f626360ca81e6098bc96774464e16.jpg')", backgroundPosition: "center", height: "100vh", width: "100%", backgroundColor: "rgba(0, 0, 0, 0.5)", backgroundBlendMode: "multiply", zIndex: "1", display: "flex", justifyContent: "center"}}>
            <div className="cotainer-fluid d-flex" style={{width: "100%", maxWidth: "1700px"}}>
            <div className="row d-flex live-chat-container" style={{zIndex: "2", margin: "100px 0px", width: "100%"}}>
-                <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-lg-5 live-chat-texts" style={{backgroundColor: "rgba(0, 0, 0, 0.56)", textAlign: "center", color: "white", color: "rgb(214, 214, 214)", display: "flex", justifyContent: "center", flexDirection: "column"}}>
+                <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-lg-5 live-chat-texts" style={{backgroundColor: "rgba(0, 0, 0, 0.56)", color: "white", color: "rgb(214, 214, 214)", display: "flex", justifyContent: "center", flexDirection: "column"}}>
                     <h3>Why Chat With Us?</h3>
                     <p>Got questions about a vehicle, financing, or trade-ins? Our live chat team is here to help in real-time. Whether you're browsing or ready to buy, chatting with us can save you time and get you accurate info faster than ever.</p>                    
                     <h3>Expert Help, Anytime</h3>

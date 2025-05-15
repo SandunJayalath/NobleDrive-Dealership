@@ -24,13 +24,48 @@ div#sign-in-page {
     border-color: rgb(132, 0, 255);
   }
 
+  div#menu-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+   p#subtle-message {
+    color: rgb(194, 194, 194);
+    border: 1px solid rgb(58, 58, 58);
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 100px;
+    z-index: 20;
+    font-weight: 500;
+  }
+
   @media (max-width: 700px) {
     #sign-in-container {
-      width: 380px;
-      
+      width: 360px;
+      padding: 10px 10px;
     }
+    div#menu-box {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+     p#subtle-message {
+      color: rgb(194, 194, 194);
+      border: 1px solid rgb(58, 58, 58);
+      padding: 20px 5px;
+      width: 95%;
+      border-radius: 20px;
+      position: absolute;
+      top: 100px;
+      z-index: 20;
+      font-weight: 500;
   }
-  
+  }
+
   #title {
     font-size: 50px;
     font-family: Inter, sans-serif;
@@ -104,17 +139,6 @@ div#sign-in-page {
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
-
-  p#subtle-message {
-    color: rgb(194, 194, 194);
-    border: 1px solid rgb(58, 58, 58);
-    padding: 20px;
-    border-radius: 20px;
-    position: absolute;
-    top: 100px;
-    z-index: 20;
-    font-weight: 500;
   }
   
   #input-box input[type="submit"]:hover {

@@ -150,6 +150,22 @@ div#img-txt-card {
     transform: scale(1.05);
   }
 
+  .clicked-star {
+    width: 24px;
+    height: 24px;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 49px;
+    color: rgb(255, 196, 0);
+  }
+
+  .normal-star {
+    width: 24px;
+    height: 24px;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 49px;
+    color: rgb(255, 255, 255);
+  }
+
   div#chatting-section {
     max-width: 1900px;
     margin: 0px;
