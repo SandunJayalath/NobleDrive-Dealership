@@ -66,7 +66,11 @@ function SignIn(){
 
             </form>
             </div>
-            <p style={{textAlign: "center", color: "white", position: "absolute"}}>Don't have account! <a href="./SignUp" style={{color: "rgb(86, 201, 236)"}}>Sign up</a></p>
+            <p style={{textAlign: "center", color: "white", position: "absolute"}}>Don't have account! 
+                <Link className="ms-2" to="/SignUp" style={{textDecoration: "none", fontWeight: "bold", color: "rgb(39, 127, 241)"}}>
+                    Sign Up
+                </Link>
+            </p>
         </div>
         </div>
         </>
